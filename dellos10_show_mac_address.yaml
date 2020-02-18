@@ -1,12 +1,12 @@
 ---
-- name: Get ARP information
+- name: Get mac-address table information
   hosts: all
   gather_facts: false
 
 
   tasks:
-    - name: show ip arp
-      raw: "show ip arp"
+    - name: show mac address-table
+      raw: "show mac address-table"
 
       register: print_output
 
